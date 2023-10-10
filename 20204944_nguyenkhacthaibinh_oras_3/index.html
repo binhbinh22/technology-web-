@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-combobox.css">
+    <link rel="stylesheet" href="CSS/docs.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/pdfmake.min.js"></script>
+    <script src="JS/html2canvas.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/support.js"></script>
+    <script>
+    </script>
+</head>
+<body>
+
+<div class="MainContentTitle">
+    <div>
+        <span class="Title">THÔNG TIN CÁ NHÂN</span>
+        
+    </div>
+    <hr class="specialHr">
+</div>
+
+<div class="MainContent" id="mainContent">
+    <div>
+        <div class="GroupBox">
+            <div class="InTittleBox">
+                <div class="InTittle">
+                    <div style="width: 15px"></div>
+                    <p>Thông tin sinh viên_20204944</p>
+                    <div style="width: 15px"></div>
+                    <div class="ButtonBox">
+                        <div style="width: 15px"></div>
+                        <div class="SelectTypeBox">
+                            <button class="SelectButtonInterface addItemButton" onclick="showSelectTypeMenu(this)">Thêm thông tin</button>
+                            <div class="SelectTypeMenu">
+                                <a href="#" onclick="addNewItem(this)">Text</a>
+                                <a href="#" onclick="addNewItem(this)">List</a>
+                                <a href="#" onclick="addNewItem(this)">Check</a>
+                            </div>
+                        </div>
+                        <div style="width: 15px"></div>
+                        <button class="addGroupButton" onclick="addNewGroupItem()">Thêm thông tin nhóm</button>
+                    </div>
+                    <div style="width: 15px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

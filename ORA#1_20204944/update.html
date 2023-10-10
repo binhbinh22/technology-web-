@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>CTTBK &#149; MainPage</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"/>
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap-combobox.css"/>
+    <link rel="stylesheet" href="Content/docs.min.css"/>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css"/>
+</head>
+<body>
+
+ <!--div class="col-md-4">
+    <span
+    class="dxeBase_Mulberry normalText"
+    id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo1">
+    <strong style="font: Times;font-size:italic;font-size:20px">Họ và tên&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">Nguyễn Khắc Thái Bình<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Năm vào trường&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">2020<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Bậc đào tạo&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">KSCLC-TN-TT-VN-ICT<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Chương trình&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">Công nghệ thông tin Việt-Nhật 2020<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Khoa/Viện quản lý&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">Trường Công nghệ Thông tin và Truyền thông<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Tình trạng học tập&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">Học<br/></span>
+</div>
+<div class="col-md-4">
+<span
+    class="dxeBase_Mulberry normalText"
+    id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo2">
+    <strong style="font: Times;font-size:italic;font-size:20px">Giới tính&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">Nam<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Lớp&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">Việt Nhật 02-K65<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Khóa học&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">65<br/>
+    <strong style="font: Times;font-size:italic;font-size:20px">Email&emsp;:
+    </strong style="font:Times;font-weight:bold;font-size:20px">binh.nkt204944@sis.hust.edu.vn<br/></span>
+</div>
+</div-->        
+
+<form action="/change-info" method="post">
+        <div class="row">
+            <span class="Title" style="margin-left: 100px;">CHỈNH SỬA THÔNG TIN SINH VIÊN</span>
+            <hr>
+        </div>
+        <div class="row">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="col-md-3">
+                            <div style="margin-left: 60px;">
+                                <img src="data.png" id="student-portrait" style="width:180px;heigh:80px;">
+                            </div>
+                            <div style="margin-left: 60px;">
+                                <span class="normalText" >
+                                    <label for="student-id" class="info-label">MSSV:</label>
+                                    <input type="text" name="student-id" minlength="8" maxlength="8">
+                                </span>
+                            </div>
+                        </td>
+                        <td class="col-md-4">
+                            <span class="normalText">
+                                <label for="fullname" style="font: Times;font-size:italic;font-size:20px">Họ và tên &emsp;: </label>
+                                <input type="text" name="fullname">
+                                <br>
+                                <label for="year-in" style="font: Times;font-size:italic;font-size:20px">Năm vào trường &emsp;: </label>
+                                <input type="number" name="year-in" min="1956" max="2023" step="1">
+                                <br>
+                                <label for="education-level" style="font: Times;font-size:italic;font-size:20px">Bậc đào tạo&emsp;: </label>
+                                <select name="education-level">
+                                    <option value="" style="font-style: italic;">--Chọn--</option>
+                                    <option value="KSCQ">KSCQ</option>
+                                    <option value="KSCLC-TN-TT-VN-ICT">KSCLC-TN-TT-VN-ICT</option>
+                                    <option value="KSQT">KSQT</option>
+                                </select>
+                                <br>
+                                <label for="training-program" style="font: Times;font-size:italic;font-size:20px">Chương trình&emsp;: </label>
+                                <input type="text" name="training-program">
+                                <br>
+                                <label for="management" style="font: Times;font-size:italic;font-size:20px">Khoa/Viện quản lý&emsp;: </label>
+                                <select name="management">
+                                    <option value="" style="font-style: italic;">
+                                        --Chọn--
+                                    </option>
+                                    <option value="Trường Cơ khí">
+                                        Trường Cơ khí
+                                    </option>
+                                    <option value="Viện Công nghệ Sinh học và Công nghệ Thực phẩm">
+                                        Viện Công nghệ Sinh học và Công nghệ Thực phẩm
+                                    </option>
+                                    <option value="Trường Công nghệ Thông tin và Truyền thông">
+                                        Trường Công nghệ Thông tin và Truyền thông
+                                    </option>
+                                    <option value="Viện Dệt may - Da giầy và Thời trang">
+                                        Viện Dệt may - Da giầy và Thời trang
+                                    </option>
+                                    <option value="Viện Khoa học và Công nghệ Môi trường">
+                                        Viện Khoa học và Công nghệ Môi trường
+                                    </option>
+                                    <option value="Viện Khoa học và Kỹ thuật Vật liệu">
+                                        Viện Khoa học và Kỹ thuật Vật liệu
+                                    </option>
+                                    <option value="Viện Kinh tế và Quản lý">
+                                        Viện Kinh tế và Quản lý
+                                    </option>
+                                    <option value="Viện Kỹ thuật Hóa học">
+                                        Viện Kỹ thuật Hóa học
+                                    </option>
+                                    <option value="Viện Ngoại ngữ">
+                                        Viện Ngoại ngữ
+                                    </option>
+                                    <option value="Viện Sư phạm Kỹ thuật">
+                                        Viện Sư phạm Kỹ thuật
+                                    </option>
+                                    <option value="Viện Toán ứng dụng và Tin học">
+                                        Viện Toán ứng dụng và Tin học
+                                    </option>
+                                    <option value="Viện Vật lý Kỹ thuật">
+                                        Viện Vật lý Kỹ thuật
+                                    </option>
+                                    <option value="Trường Điện - Điện tử">
+                                        Trường Điện - Điện tử
+                                    </option>
+                                </select>
+                                <br>
+                                <label for="learning-status" style="font: Times;font-size:italic;font-size:20px">Tình trạng học tập&emsp;: </label>
+                                <select name="learning-status">
+                                    <option value="" style="font-style: italic;">--Chọn--</option>
+                                    <option value="Học">Học</option>
+                                    <option value="Đã tốt nghiệp">Đã tốt nghiệp</option>
+                                    <option value="Thôi học">Thôi học</option>
+                                </select>
+                                <br>
+                            </span>
+                        </td>
+                        <td class="col-md-4">
+                            <span class="normalText">
+                                <label for="gender" style="font: Times;font-size:italic;font-size:20px">Giới tính&emsp;: </label>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Nam /</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Nữ</label>
+                                <br>
+                                <label for="student-class" style="font: Times;font-size:italic;font-size:20px">Lớp&emsp;: </label>
+                                <input type="text" name="student-class">
+                                <br>
+                                <label for="num-course" style="font: Times;font-size:italic;font-size:20px">Khóa học&emsp;: </label>
+                                <input type="number" name="num-course" min="1" max="67" step="1">
+                                <br>
+                                <label for="student-email" style="font: Times;font-size:italic;font-size:20px">Email&emsp;: </label>
+                                <input type="email" name="student-email">
+                                <br>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row" style="margin-left: 100px;">
+            <input type="submit" value="OK">
+            <input type="button" value="Cancel" onclick="location.href='index.html'">
+        </div>
+    </form>
+
+
+</body>
+</html>
+
